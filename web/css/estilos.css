@@ -1,0 +1,17 @@
+ .body{
+    background-image: url('../images/top-91.5.jpg');
+    padding:50px;
+}
+
+.navbar-brand{
+    color: #fff;
+}
+.footer {
+    color: #fff;
+    background-color: #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.cont{
+    height: 470px;
+}
