@@ -40,6 +40,9 @@ and open the template in the editor.
                                 <a href="nuevo.jsp">Nuevo comercial</a>
                             </li>
                             <li>
+                            <a href="cliente.jsp">Nuevo cliente</a>
+                            </li>
+                            <li>
                                 <a href="index.html">Salir</a>
                             </li>
                         </ul>

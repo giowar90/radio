@@ -1,9 +1,11 @@
+<%-- 
+    Document   : cliente
+    Created on : 12/08/2015, 12:00:42 AM
+    Author     : GIO
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -54,34 +56,36 @@ and open the template in the editor.
                     <div class="col-sm-2"></div>
                     <div class="col-sm-8">
                         <div class="panel panel-default">
-                            <div class="panel-heading text-center">Nuevo comercial</div>
+                            <div class="panel-heading text-center">Nuevo cliente</div>
                             <div class="panel-body ">
-                                <form action="altaComercial.jsp" method="post">
+                                <form action="guardar.jsp" method="post">
                                     <table class="table">
                                     <tr >
                                         <td>
                                            <div class="input-group btn-block">
-                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar-o"></i></span>
-                                                <input class="form-control" type="text" name="nombre" placeholder="Nombre del comercial"/>
+                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                                <input class="form-control" type="text" name="nombre" placeholder="Nombre"/>
                                             </div><br />
                                         </td>
                                         <td>&nbsp;&nbsp;&nbsp;</td>
                                         <td>
                                             <div class="input-group btn-block">
-                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar-o"></i></span>
-                                                <input class="form-control" type="text" name="duracion" placeholder="Duarcion en segundos (ss)"/>
+                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-home"></i></span>
+                                                <input class="form-control" type="text" name="dom" placeholder="Domicilio"/>
                                             </div><br />
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <%out.print(con.consultarClientes());%>
+                                         <td>
+                                            <div class="input-group btn-block">
+                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-send"></i></span>
+                                                <input class="form-control" type="email" name="email" placeholder="Correo electronico"/>
+                                            </div><br />
                                         </td>
                                         <td>&nbsp;&nbsp;&nbsp;</td>
                                         <td>
                                             <div class="input-group btn-block">
-                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-comment-o"></i></span>
-                                                <input class="form-control" type="text" name="descripcion" placeholder="Descripcion"/>
+                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                                                <input class="form-control" type="text" name="tel" placeholder="telefono"/>
 
                                             </div><br />
                                         </td>
@@ -115,3 +119,4 @@ and open the template in the editor.
         </footer>
     </body>
 </html>
+

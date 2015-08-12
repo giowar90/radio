@@ -185,5 +185,19 @@ public class conexion {
         }
         return "ERROR";
     }
+     
+     public String altaCliente(String nombre,String dom,String email,int tel){
+        try {
+            String sql ="insert into cliente(nombre,domicilio,email,telefono) values('"+nombre+"','"+dom+"','"+email+"',"+tel+");";
+            if(conectar()){
+                Statement stt = conexion.createStatement();
+                stt.execute(sql);
+            }
+            return "Insercion realizada";
+        } catch (Exception e) {
+            System.out.println("Error en la conexion "+e);
+        }
+        return "ERROR";
+    }
     
 }
